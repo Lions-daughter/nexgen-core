@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="NexGen Core | Future of AI">
+    <meta name="description"
+        content="Next generation of AI-powered SaaS solutions. Built for speed, security, and global scale.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="NexGen Core | Future of AI">
+    <meta property="og:description" content="Empowering developers with military-grade neural processing.">
+    <meta property="og:image" content="img/social-preview.png">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="NexGen Core | Future of AI">
+    <meta property="twitter:image" content="img/social-preview.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/all.js"></script>
+
+</head>
+
+
+
+
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <span class="brand-logo">N</span>
+            NexGen <span style="color: var(--neon-cyan); margin-left: 8px;">Core</span>
+        </a>
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+            <div class="hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link active" href="feature.html">Features</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link" href="documentation.html">Docs</a></li>
+            </ul>
+            <div class="d-flex align-items-center gap-3">
+                <a href="signin.html" class="nav-link d-none d-lg-block">Sign In</a>
+                <a href="contact.html"><button class="btn btn-neon">Contact Us</button></a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<section class="docs-section py-5 mt-5">
+    <div class="container-fluid px-md-5">
+        <div class="row g-5">
+            <div class="col-lg-3 d-none d-lg-block">
+                <div class="docs-sidebar sticky-top" style="top: 100px;">
+                    <h5 class="fw-bold mb-4 text-white">Getting Started</h5>
+                    <ul class="list-unstyled docs-menu">
+                        <li><a href="#introduction" class="active">Introduction</a></li>
+                        <li><a href="#quickstart">Quick Start Guide</a></li>
+                        <li><a href="#authentication">Authentication</a></li>
+                    </ul>
+                    <h5 class="fw-bold my-4 text-white">API Reference</h5>
+                    <ul class="list-unstyled docs-menu">
+                        <li><a href="#endpoints">Neural Endpoints</a></li>
+                        <li><a href="#errors">Error Codes</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-9">
+                <div class="docs-content">
+                    <section id="introduction" class="mb-5">
+                        <h1 class="display-5 fw-bold mb-4">Introduction to <span class="text-neon">NexGen API</span>
+                        </h1>
+                        <p class="text-gray lead">Learn how to integrate NexGen Core's neural processing into your own
+                            applications with our powerful REST API.</p>
+                        <hr class="border-secondary opacity-25 my-5">
+                    </section>
+
+                    <section id="quickstart" class="mb-5">
+                        <h3 class="fw-bold mb-4 text-white">Quick Start Guide</h3>
+                        <div class="code-block p-4 rounded-4 mb-4">
+                            <pre class="mb-0 text-neon-purple"><code>curl -X POST https://api.nexgencore.ai/v1/analyze \
+  -H "Authorization: Bearer YOUR_API_KEY"</code></pre>
+                        </div>
+                    </section>
+
+                    <section id="authentication" class="mb-5 pt-4">
+                        <h3 class="fw-bold mb-4 text-white">Authentication</h3>
+                        <p class="text-gray">All API requests must include your API Key in the
+                            <code>Authorization</code> header.
+                        </p>
+                        <div class="alert bg-dark border-start border-neon border-4 p-4 rounded-3">
+                            <p class="mb-0 text-white small"><strong>Note:</strong> Never share your API key publicly.
+                            </p>
+                        </div>
+                    </section>
+
+                    <section id="endpoints" class="mb-5 pt-4">
+                        <h3 class="fw-bold mb-4 text-white">Neural Endpoints</h3>
+                        <div class="table-responsive mt-4">
+                            <table class="table table-dark table-hover border-secondary border-opacity-25">
+                                <thead>
+                                    <tr class="text-neon">
+                                        <th>Method</th>
+                                        <th>Endpoint</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span class="badge bg-success text-dark">POST</span></td>
+                                        <td><code>/v1/analyze</code></td>
+                                        <td class="text-gray">Analyze raw data strings.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                    <section id="errors" class="mb-5 pt-4">
+                        <h3 class="fw-bold mb-4 text-white">Error Codes</h3>
+                        <p class="text-gray">Our API uses standard HTTP response codes to indicate the success or
+                            failure of an API request.
+                        </p>
+
+                        <div class="table-responsive mt-4">
+                            <table class="table table-dark table-hover border-secondary border-opacity-25">
+                                <thead>
+                                    <tr class="text-neon-purple">
+                                        <th>Code</th>
+                                        <th>Status</th>
+                                        <th>Meaning</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code class="text-white">200</code></td>
+                                        <td><span class="text-success">Success</span></td>
+                                        <td class="text-gray small">The request was successful and the neural analysis
+                                            is complete.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code class="text-white">400</code></td>
+                                        <td><span class="text-warning">Bad Request</span></td>
+                                        <td class="text-gray small">The request was unacceptable, often due to missing a
+                                            required parameter.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><code class="text-white">401</code></td>
+                                        <td><span class="text-danger">Unauthorized</span></td>
+                                        <td class="text-gray small">No valid API Key was provided in the authorization
+                                            header.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code class="text-white">429</code></td>
+                                        <td><span class="text-info">Too Many Requests</span></td>
+                                        <td class="text-gray small">You have hit the rate limit for your current pricing
+                                            plan.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code class="text-white">500</code></td>
+                                        <td><span class="text-danger">Server Error</span></td>
+                                        <td class="text-gray small">Something went wrong on NexGen Core's end. We're on
+                                            it!</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Footer -->
+
+<footer class="footer-section pt-5 mt-5">
+    <div class="container pt-5 pb-4">
+        <div class="row g-5">
+            <div class="col-lg-4 col-md-6">
+                <a class="navbar-brand d-flex align-items-center mb-4" href="index.html">
+                    <span class="brand-logo">N</span>
+                    NexGen <span class="text-neon ms-2">Core</span>
+                </a>
+                <p class="text-gray mb-4">
+                    The next generation of AI-powered SaaS solutions. Built for speed, security, and global scale.
+                </p>
+                <div class="social-links d-flex gap-3">
+                    <a href="https://x.com/" class="social-icon" target="_blank"><i class="bi bi-twitter-x"></i></a>
+                    <a href="https://github.com/" class="social-icon" target="_blank"><i class="bi bi-github"></i></a>
+                    <a href="https://www.linkedin.com/" class="social-icon" target="_blank"><i
+                            class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-6">
+                <h5 class="fw-bold mb-4">Quick Links</h5>
+                <ul class="list-unstyled footer-links">
+                    <li><a href="feature.html">Features</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Conatct Us</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-6">
+                <h5 class="fw-bold mb-4">More Info</h5>
+                <ul class="list-unstyled footer-links">
+
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="Policy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <h5 class="fw-bold mb-4">Subscribe to our Newsletter</h5>
+                <p class="text-gray mb-4">Get the latest AI insights delivered to your inbox.</p>
+                <div class="input-group newsletter-group">
+                    <input type="email" class="form-control bg-transparent text-white border-secondary shadow-none"
+                        placeholder="Enter your email">
+                    <button class="btn btn-neon" type="button">Join</button>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-5 border-secondary opacity-25">
+
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+            <p class="text-gray mb-0">&copy; 2026 NexGen Core AI Inc. All rights reserved.</p>
+
+        </div>
+    </div>
+</footer>
+<!-- End Footer -->
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+</body>
+
+</html>
