@@ -27,9 +27,21 @@
 </head>
 
 <style>
-    .ms-auto {
-        margin-right: 25px !important;
-        margin-left: auto !important;
+    .popular-badge {
+        position: absolute;
+        top: -15px;
+        /* Adjust this value if it's too high */
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        /* ... other styles ... */
+    }
+
+    .pricing-card.featured {
+        position: relative;
+        /* Ensure the badge stays relative to the card */
+        margin-top: 20px;
+        /* Gives extra breathing room specifically for the badge */
     }
 </style>
 
@@ -82,7 +94,7 @@
                 <span class="text-white">Yearly <small class="text-neon ms-1">(Save 20%)</small></span>
             </div>
 
-            <div class="row g-4 justify-content-center">
+            <div class="row g-4 justify-content-center mt-5">
                 <div class="col-md-4">
                     <div class="pricing-card">
                         <div class="plan-name">Starter</div>
