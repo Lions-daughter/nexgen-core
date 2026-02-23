@@ -67,52 +67,78 @@
     <!-- End Navbar -->
 
 
-    <section class="privacy-section py-5 mt-5">
-        <div class="container py-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="glass-card p-4 p-md-5 rounded-5 border border-secondary border-opacity-25">
-                        <h1 class="display-4 fw-bold mb-4 text-white">Privacy <span class="text-neon">Policy</span></h1>
-                        <p class="text-gray mb-5">Last Updated: February 22, 2026</p>
+    <!-- Pricing -->
 
-                        <div class="privacy-content text-gray">
-                            <h4 class="text-white fw-bold mt-4">1. Information We Collect</h4>
-                            <p>We collect information you provide directly to us when you create an account, such as
-                                your
-                                name, email address, and any neural data you process through our API.</p>
+    <section class="pricing-section py-5" id="pricing">
+        <div class="container py-5 text-center">
+            <h2 class="section-title mb-3">Simple, Transparent <span class="text-neon">Pricing</span></h2>
+            <p class="text-gray mb-5">Choose the plan that fits your next-gen needs.</p>
 
-                            <h4 class="text-white fw-bold mt-4">2. How We Use Your Information</h4>
-                            <p>Your data is used to provide, maintain, and improve our neural services. We do NOT use
-                                your
-                                private data to train public AI models without explicit consent.</p>
+            <div class="d-flex justify-content-center align-items-center mb-5 gap-3">
+                <span class="text-gray">Monthly</span>
+                <div class="form-check form-switch custom-switch">
+                    <input class="form-check-input" type="checkbox" id="pricing-switcher">
+                </div>
+                <span class="text-white">Yearly <small class="text-neon ms-1">(Save 20%)</small></span>
+            </div>
 
-                            <h4 class="text-white fw-bold mt-4">3. Data Security</h4>
-                            <p>We implement AES-256 bit military-grade encryption to safeguard your information. Our
-                                decentralized storage ensures that your data remains secure even in the event of a
-                                localized
-                                breach.</p>
-
-                            <h4 class="text-white fw-bold mt-4">4. Cookies</h4>
-                            <p>NexGen Core uses cookies to enhance your dashboard experience and remember your
-                                preferences.
-                                You can manage cookie settings through your browser at any time.</p>
-
-                            <h4 class="text-white fw-bold mt-4">5. Third-Party Sharing</h4>
-                            <p>We do not sell your personal data. We only share information with third-party providers
-                                necessary for payment processing or cloud infrastructure.</p>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4">
+                    <div class="pricing-card">
+                        <div class="plan-name">Starter</div>
+                        <div class="price-box">
+                            <span class="currency">$</span>
+                            <span class="amount" id="basic-price">29</span>
+                            <span class="period">/mo</span>
                         </div>
+                        <ul class="plan-features list-unstyled">
+                            <li><i class="bi bi-check2-circle text-neon me-2"></i> 10,000 AI Tokens</li>
+                            <li><i class="bi bi-check2-circle text-neon me-2"></i> Standard Support</li>
+                            <li><i class="bi bi-check2-circle text-neon me-2"></i> Basic Analytics</li>
+                        </ul>
+                        <button class="btn btn-outline-neon w-100 mt-4">Choose Plan</button>
+                    </div>
+                </div>
 
-                        <div class="mt-5 pt-4 border-top border-secondary border-opacity-25 text-center">
-                            <p class="small">Questions about your privacy? Email us at <a
-                                    href="mailto:privacy@nexgencore.ai"
-                                    class="text-neon text-decoration-none">privacy@nexgencore.ai</a></p>
+                <div class="col-md-4">
+                    <div class="pricing-card featured">
+                        <div class="popular-badge">Most Popular</div>
+                        <div class="plan-name">Pro</div>
+                        <div class="price-box">
+                            <span class="currency">$</span>
+                            <span class="amount" id="pro-price">79</span>
+                            <span class="period">/mo</span>
                         </div>
+                        <ul class="plan-features list-unstyled">
+                            <li><i class="bi bi-check2-circle text-neon me-2"></i> Unlimited Tokens</li>
+                            <li><i class="bi bi-check2-circle text-neon me-2"></i> Priority Support</li>
+                            <li><i class="bi bi-check2-circle text-neon me-2"></i> Advanced Neural Models</li>
+                        </ul>
+                        <button class="btn btn-neon w-100 mt-4" style="background: var(--neon-cyan); color:black;">Get
+                            Started</button>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="pricing-card">
+                        <div class="plan-name">Enterprise</div>
+                        <div class="price-box">
+                            <span class="currency">$</span>
+                            <span class="amount" id="enterprise-price">199</span>
+                            <span class="period">/mo</span>
+                        </div>
+                        <ul class="plan-features list-unstyled">
+                            <li><i class="bi bi-check2-circle text-neon me-2"></i> Custom Integration</li>
+                            <li><i class="bi bi-check2-circle text-neon me-2"></i> 24/7 Dedicated Support</li>
+                            <li><i class="bi bi-check2-circle text-neon me-2"></i> API Access</li>
+                        </ul>
+                        <button class="btn btn-outline-neon w-100 mt-4">Contact Sales</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    <!-- / End Pricing -->
 
 
     <!-- Footer -->
